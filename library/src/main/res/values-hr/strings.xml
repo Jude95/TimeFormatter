@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeformatter_now">sada</string>
+
+    <plurals name="timeformatter_seconds_ago">
+        <item quantity="one">prije %d sekunde</item>
+        <item quantity="two">prije %d sekunde</item>
+        <item quantity="few">prije %d sekunde</item>
+        <item quantity="other">prije %d sekundi</item>
+    </plurals>
+    <plurals name="timeformatter_minutes_ago">
+        <item quantity="one">prije %d minute</item>
+        <item quantity="two">prije %d minute</item>
+        <item quantity="few">prije %d minute</item>
+        <item quantity="other">prije %d minuta</item>
+    </plurals>
+    <plurals name="timeformatter_hours_ago">
+        <item quantity="one">prije %d sat</item>
+        <item quantity="two">prije %d sata</item>
+        <item quantity="few">prije %d sata</item>
+        <item quantity="other">prije %d sati</item>
+    </plurals>
+
+    <string name="timeformatter_yesterday">Jučer. %s</string>
+</resources>

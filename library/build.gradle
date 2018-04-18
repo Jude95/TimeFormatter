@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+File localPropertiesFile = rootProject.file('local.properties')
+Properties localProperties = new Properties()
+if (localPropertiesFile.exists()) {
+    localProperties.load(new FileInputStream(localPropertiesFile))
+    if (localProperties['bintray.user'] == null || localProperties['bintray.apiKey'] == null) {
+        logger.log(LogLevel.ERROR, "No bintray properties!")
+    }
+}
+
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = "jude95"
+    groupId = 'com.jude'
+    artifactId = "timeformatter"
+    publishVersion = "1.0.1"
+    desc = 'A tool for Android'
+    website = 'https://github.com/Jude95/TimeFormatter'
+    dryRun = false
+    bintrayUser = localProperties['bintray.user']
+    bintrayKey = localProperties['bintray.apiKey']
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+

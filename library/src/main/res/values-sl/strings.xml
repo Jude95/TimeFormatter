@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeformatter_now">pravkar</string>
+
+    <plurals name="timeformatter_seconds_ago">
+        <item quantity="one">pred %d sekundo</item>
+        <item quantity="two">pred %d sekundama</item>
+        <item quantity="few">pred %d sekundami</item>
+        <item quantity="other">pred %d sekundami</item>
+    </plurals>
+    <plurals name="timeformatter_minutes_ago">
+        <item quantity="one">pred %d minuto</item>
+        <item quantity="two">pred %d minutama</item>
+        <item quantity="few">pred %d minutami</item>
+        <item quantity="other">pred %d minutami</item>
+    </plurals>
+    <plurals name="timeformatter_hours_ago">
+        <item quantity="one">pred %d uro</item>
+        <item quantity="two">pred %d urama</item>
+        <item quantity="few">pred %d urami</item>
+        <item quantity="other">pred %d urami</item>
+    </plurals>
+    <string name="timeformatter_yesterday">Včeraj. %s</string>
+
+</resources>

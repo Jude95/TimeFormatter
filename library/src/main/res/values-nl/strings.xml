@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeformatter_now">zojuist</string>
+
+    <plurals name="timeformatter_seconds_ago">
+        <item quantity="zero">zojuist</item>
+        <item quantity="one">%d seconde geleden</item>
+        <item quantity="other">%d seconden geleden</item>
+    </plurals>
+    <plurals name="timeformatter_minutes_ago">
+        <item quantity="one">%d minuut geleden</item>
+        <item quantity="other">%d minuten geleden</item>
+    </plurals>
+    <plurals name="timeformatter_hours_ago">
+        <item quantity="one">%d uur gelden</item>
+        <item quantity="other">%d uur gelden</item>
+    </plurals>
+    <string name="timeformatter_yesterday">Gisteren. %s</string>
+</resources>

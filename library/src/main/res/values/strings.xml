@@ -1,0 +1,18 @@
+<resources>
+    <string name="timeformatter_now">just now</string>
+
+    <plurals name="timeformatter_seconds_ago">
+        <item quantity="zero">just now</item>
+        <item quantity="one">%d second ago</item>
+        <item quantity="other">%d seconds ago</item>
+    </plurals>
+    <plurals name="timeformatter_minutes_ago">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="timeformatter_hours_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <string name="timeformatter_yesterday">Yesterday. %s</string>
+</resources>
